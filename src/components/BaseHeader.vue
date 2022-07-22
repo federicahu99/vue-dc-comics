@@ -1,7 +1,7 @@
 <template>
   <header>
     <figure>
-        <img src="../assets/img/dc-logo.png" alt="">
+        <img src="../assets/img/dc-logo.png" alt="logo DC">
     </figure>
     <nav>
         <ul>
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-    name: BaseHeader
+    name: 'BaseHeader'
 }
 </script>
 
