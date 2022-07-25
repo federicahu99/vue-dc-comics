@@ -2,20 +2,53 @@
   <div class="container">
     <h2>CURRENT SERIES</h2>
     <div class="cards">
-        <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="Superman comic">
-        <h4>action comics</h4>
+        <TheComic />
     </div>
 
   </div>
 </template>
 
 <script>
+
+import TheComic from './TheComic.vue'
 export default {
     name: 'ComicsSection',
+    components:{
+        TheComic,
+    }
 }
 
 </script>
 
-<style>
+<style lang="scss" scoped>
+    h2 {
+        background-color: dodgerblue;
+        display: inline-block;
+        color:white;
+        padding: 10px;
+        margin-top: -20px;
+    }
 
+    .cards {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+       
+
+        figure {
+            flex-basis: 25%;
+
+            img {
+                object-fit: cover;
+                object-position: top;
+                height: 180px;
+                width: 180px;
+            }
+
+            h4 {
+                color: white;
+                text-transform: uppercase;
+            }
+        }
+    }
 </style>
