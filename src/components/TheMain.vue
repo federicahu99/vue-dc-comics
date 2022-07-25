@@ -1,20 +1,25 @@
 <template>
   <div id="bg-dark">
     <div class="container">
-      <h1>Content goes here</h1>
+      <ComicsSection />
     </div>
   </div>
 </template>
 
 <script>
+import ComicsSection from './ComicsSection.vue'
+
 export default {
-    name: 'TheMain'
+    name: 'TheMain',
+    components: {
+    ComicsSection,
+    }
 }
 </script>
 
 <style lang="scss" scoped>
     #bg-dark {
-        background-color: black;
+        background-color: #1c1c1c;
         min-height: 150px;
 
         h1{

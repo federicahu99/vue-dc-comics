@@ -90,6 +90,12 @@ export default {
         li a {
             color:gray;
             font-size: 12px;
+
+            &:hover,
+            &:active {
+                color:white;
+            }
+            
         }
         
         #flex-footer{
@@ -120,6 +126,7 @@ export default {
                     color: dodgerblue;
                     border: 2px solid white;
                 }
+
             }
 
             .flex-social {
@@ -127,9 +134,17 @@ export default {
                 justify-content: space-between;
                 align-items: center;
                
+                h3 {
+                   color: dodgerblue;
+                }
 
                img {
-                margin-left: 15px;
+                   margin-left: 15px;
+
+                   &:hover {
+                        border-radius: 52%;
+                        background: white;
+                   }
        
                }
             }

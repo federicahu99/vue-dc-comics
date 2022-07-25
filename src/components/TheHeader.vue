@@ -2,7 +2,7 @@
   <header class="container">
     <div id="header-flex">
         <figure>
-            <img src="../assets/img/dc-logo.png" alt="logo DC">
+            <a href=""><img src="../assets/img/dc-logo.png" alt="logo DC"></a>
         </figure>
         <nav>
             <ul>
@@ -23,60 +23,60 @@
 export default {
     name: 'BaseHeader',
     data(){ 
-    return {
-      links: [
-    {
-    text: 'Characters',
-    url: '#',
-    current: false,
+      return {
+        links: [
+      {
+      text: 'Characters',
+      url: '#',
+      current: false,
+      },
+      {
+      text: 'Comics',
+      url: '#',
+      current: false,
+      },
+      {
+      text: 'Movies',
+      url: '#',
+      current: false,
     },
     {
-     text: 'Comics',
-     url: '#',
-     current: true,
+      text: 'TV',
+      url: '#',
+      current: false,
     },
     {
-     text: 'Movies',
-     url: '#',
-     current: false,
-   },
-   {
-     text: 'TV',
-     url: '#',
-     current: false,
-   },
-   {
-     text: 'Games',
-     url: '#',
-     current: false,
-   },
-   {
-     text: 'Collectibles',
-     url: '#',
-     current: false,
-   },
-   {
-     text: 'Videos',
-     url: '#',
-     current: false,
-   },
-   {
-     text: 'Fans',
-     url: '#',
-     current: false,
-   },
-   {
-     text: 'News',
-     url: '#',
-     current: false,
-   },
-   {
-     text: 'Shop',
-     url: '#',
-     current: false,
-   }
-   ]}
-  }
+      text: 'Games',
+      url: '#',
+      current: false,
+    },
+    {
+      text: 'Collectibles',
+      url: '#',
+      current: false,
+    },
+    {
+      text: 'Videos',
+      url: '#',
+      current: false,
+    },
+    {
+      text: 'Fans',
+      url: '#',
+      current: false,
+    },
+    {
+      text: 'News',
+      url: '#',
+      current: false,
+    },
+    {
+      text: 'Shop',
+      url: '#',
+      current: false,
+    }
+    ]}
+    }
 }
 
 </script>
@@ -110,7 +110,15 @@ header {
             text-transform: uppercase;
             font-size: 10px;
             font-weight: bolder;
+
+            a:active,
+            a:hover{
+            color: dodgerblue;
+            padding-bottom: 37px;
+            border-bottom: 5px solid dodgerblue;
         }
     }
+
+}
 }
 </style>

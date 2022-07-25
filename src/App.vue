@@ -1,7 +1,10 @@
 <template>
     <div id="root">
       <TheHeader />
-      <TheMain />
+      <TheJumbotron />
+      <TheMain> 
+        <ComicsSection />
+      </TheMain>
       <TheFooter/>
     </div>
 </template>
@@ -10,6 +13,8 @@
 import TheHeader from './components/TheHeader.vue'
 import TheMain from './components/TheMain.vue'
 import TheFooter from './components/TheFooter.vue'
+import TheJumbotron from './components/TheJumbotron.vue'
+
 
 
 export default {
@@ -18,6 +23,7 @@ export default {
     TheHeader,
     TheMain,
     TheFooter,
+    TheJumbotron,
   }
 }
 
