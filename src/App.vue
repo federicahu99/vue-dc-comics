@@ -2,7 +2,10 @@
     <div id="root">
       <TheHeader />
       <TheJumbotron />
-      <TheMain/> 
+      <TheMain>
+        <ComicsSection />  
+      </TheMain>
+      <TheBanner />
       <TheFooter/>
     </div>
 </template>
@@ -12,6 +15,8 @@ import TheHeader from './components/TheHeader.vue'
 import TheMain from './components/TheMain.vue'
 import TheFooter from './components/TheFooter.vue'
 import TheJumbotron from './components/TheJumbotron.vue'
+import ComicsSection from './components/ComicsSection.vue'
+import TheBanner from './components/TheBanner.vue'
 
 export default {
   name: 'App',
@@ -20,8 +25,11 @@ export default {
     TheMain,
     TheFooter,
     TheJumbotron,
-  }
+    ComicsSection,
+    TheBanner,
+
 }
+  }
 
 </script>
 
