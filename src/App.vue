@@ -2,9 +2,7 @@
     <div id="root">
       <TheHeader />
       <TheJumbotron />
-      <TheMain> 
-        <ComicsSection />
-      </TheMain>
+      <TheMain/> 
       <TheFooter/>
     </div>
 </template>
@@ -14,8 +12,6 @@ import TheHeader from './components/TheHeader.vue'
 import TheMain from './components/TheMain.vue'
 import TheFooter from './components/TheFooter.vue'
 import TheJumbotron from './components/TheJumbotron.vue'
-
-
 
 export default {
   name: 'App',
