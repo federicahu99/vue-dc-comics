@@ -2,11 +2,12 @@
     <div>
         <h2>CURRENT SERIES</h2>
         <div class="cards">
-            <TheComic v-for="(comic, i) in comicsList" 
+            <TheComic class="comic-container"
+            v-for="(comic, i) in comicsList" 
             :key="i" 
             :comic-src="comic.thumb" 
             :comic-alt="comic.series" 
-            :comic-type="comic.type" />
+            :comic-series="comic.series" />
         </div>
         <a href="#" id="more">Load for more</a>
     </div>
@@ -28,7 +29,7 @@ export default {
     }, methods: {
         getJSON(){
             return axios.get('/dc-comics.json') //cartella pubblic
-            .then(res => this.comicsList(res.data))
+            .then(res => this.comicsList=(res.data))
             .catch(err => console.log(err))
         }
     }, mounted(){
@@ -51,28 +52,20 @@ export default {
         margin-top: 30px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
        
 
-        figure {
-            flex-basis: 25%;
-
-            img {
-                object-fit: cover;
-                object-position: top;
-                height: 180px;
-                width: 180px;
-            }
-
-            h4 {
-                color: white;
-                text-transform: uppercase;
-            }
+        .comic-container {
+            flex-basis: calc(100% / 6 - 20px);
+            padding: 10px;
         }
     }
 
     #more {
+        display: flex;
+        justify-content: center;
         display: inline-block;
-        margin: 30px auto;
+        margin: 30px 0;
         background-color: dodgerblue;
         color: white;
         text-transform: uppercase;

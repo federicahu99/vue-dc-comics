@@ -14,28 +14,28 @@ export default {
     name: 'TheBanner',
     data() {
         return {
-            bannerShop: [
-                {
-                    src: '../assets/img/buy-comics-digital-comics.png',
-                    text: 'digital comics',
-                },
-                {
-                    src: '../assets/img/buy-comics-merchandise.png',
-                    text: 'digital merchandise',
-                },
-                {
-                    src: '../assets/img/buy-comics-dc-power-visa.png',
-                    text: 'dc power visa',
-                },
-                {
-                    src: '../assets/img/buy-comics-subscritions.png',
-                    text: 'subscritions',
-                },
-                {
-                    src: '../assets/img/buy-comics-shop-locator.png',
-                    text: 'comic shop locator',
-                }
-            ]
+            // bannerShop: [
+            //     {
+            //         src: require("../assets/img/buy-comics-digital-comics.png"),
+            //         text:'digital comics',
+            //     },
+            //     {
+            //         src: require("../assets/img/buy-comics-merchandise.png"),
+            //         text:'digital merchandise',
+            //     },
+            //     {
+            //         src: require("../assets/img/buy-comics-dc-power-visa.png"),
+            //         text:'dc power visa',
+            //     },
+            //     {
+            //         src: require("../assets/img/buy-comics-subscritions.png"),
+            //         text:'subscritions',
+            //     },
+            //     {
+            //         src: require("../assets/img/buy-comics-shop-locator.png"),
+            //         text: 'comic shop locator',
+            //     }
+            // ]
 
         }
     }

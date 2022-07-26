@@ -1,7 +1,13 @@
 <template>
    <figure>
-        <img :src="require(comicSrc)" :alt="comicAlt">
-        <figcaption>{{comicType}}</figcaption>
+        <a href="#">
+            <img 
+                :src="comicSrc" 
+                :alt="comicAlt">
+            <figcaption>
+                {{ comicSeries }}
+            </figcaption>
+        </a>
    </figure>
 </template>
 
@@ -11,25 +17,27 @@ export default {
     props: {
         comicSrc: String,
         comicAlt: String,
-        comicType: String,
+        comicSeries: String,
     }
 }
 </script>
 
 <style lang="scss" scoped>
     figure{
-        flex-basis : calc(100% /6);
+        width: 140px;
 
         img {
             object-position: top;
-            object-fit: cover;
-            height: 180px;
-            width: 180px;
+            object-fit:cover;
+            height: 130px;
+            width: 130px;
 
         }
         figcaption {
             color: white;
             text-transform: uppercase;
+            font-size: 12px;
+            margin-top: 10px;
         }
     }
 </style>
